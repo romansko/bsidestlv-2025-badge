@@ -1,0 +1,9 @@
+keys.h
+src/sim.py
+solve.*
+*.d
+*.o
+firmware*
+generated_ch32v003.ld
+.DS_Store
+.vscode
