@@ -239,15 +239,15 @@ void all_challenges_success(void)
     while (1)
     {   
     turn_on_led(PIN_HAND_LED);
-    Delay_Ms(1000);
+    Delay_Ms(300);
     turn_on_led(PIN_MIDDLE_LED);
-    Delay_Ms(1000);
+    Delay_Ms(300);
     turn_on_led(PIN_RING_LED);
     turn_on_led(PIN_INDEX_LED);
-    Delay_Ms(1000);
+    Delay_Ms(300);
     turn_on_led(PIN_LITTLE_LED);
     turn_on_led(PIN_THUMB_LED);
-    Delay_Ms(1000);
+    Delay_Ms(300);
     turn_off_all_leds();
     // Delay_Ms(500);
     }

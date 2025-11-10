@@ -7,7 +7,7 @@ function fail() {
 
 echo "Erasing device and flashing..."
 
-./minichlink -p -c /dev/tty.usbmodem24F78F06A9B81 && make firmware.bin flash || fail
+make && ./minichlink -w firmware.bin flash -b || fail
 
 echo "Waiting for device to boot..."
 sleep 3
