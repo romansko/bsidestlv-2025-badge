@@ -15,7 +15,7 @@
 void button_init(void);
 int wait_for_button_press(void);
 int capture_4_bits(void);
-void button_challenge(void);
+int button_challenge(void);
 
 #endif // BUTTON_H
 

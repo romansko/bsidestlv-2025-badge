@@ -138,7 +138,7 @@ int capture_4_bits(void)
 }
 
 // Main button challenge function
-void button_challenge(void)
+int button_challenge(void)
 {
     printf("=== Button Challenge ===\r\n");
     printf("Press BTN_0 for 0, BTN_1 for 1\r\n");
@@ -163,8 +163,8 @@ void button_challenge(void)
             {
                 printf("Challenge completed! Exiting...\r\n");
                 blink_all_leds(3);
-                challenge_success(PIN_LITTLE_LED);
-                break;
+                // challenge_success(PIN_LITTLE_LED);
+                return 1;
             }
             
             // Otherwise, handle the LED challenge normally
@@ -185,5 +185,6 @@ void button_challenge(void)
             printf("\r\n");
         }
     }
+    return 0;
 }
 

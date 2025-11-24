@@ -70,9 +70,9 @@ void turn_off_all_leds(void)
     turn_off_led(PIN_HAND_LED);
 }
 
-void boot_sequence(void)
+void boot_sequence(int _delay)
 {
-    int delay = 75;
+    int delay = _delay;
     for (int i = 0; i < 3; i++)
     {
         turn_on_led(PIN_LITTLE_LED);
@@ -218,7 +218,7 @@ void challenge_success(int pin)
     blink_finger_custom_delay(pin, 10, 40);
     turn_on_led(pin);
     Delay_Ms(50);
-    // printf("Challenge success for pin %d\r\n", pin);
+    printf("Challenge success for pin %d\r\n", pin);
 }
 
 void challenge_failure(int pin)

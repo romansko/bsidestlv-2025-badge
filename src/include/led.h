@@ -29,7 +29,7 @@ void blink_finger(int pin, int n);
 void blink_finger_custom_delay(int pin, int n, int delay);
 void blink_fingers_in_sequence(void);
 void turn_off_all_leds(void);
-void boot_sequence(void);
+void boot_sequence(int _delay);
 void blink_all_leds(int n);
 int are_all_leds_on(void);
 void handle_led_challenge(uint8_t value);

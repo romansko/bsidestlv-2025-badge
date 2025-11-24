@@ -11,6 +11,7 @@
 #include <cli.h>
 #include <led.h>
 #include <button.h>
+#include <minigame.h>
 
 #define CH32V003_SPI_SPEED_HZ (100000000/3)
 #define CH32V003_SPI_DIRECTION_2LINE_TXRX
@@ -372,6 +373,13 @@ static void handleSerialRead()
     printf("\r\n");
 }
 
+
+
+
+
+
+
+
 int main()
 {
 	// Enable GPIOs
@@ -379,9 +387,23 @@ int main()
 
     init_pins();
 
-    boot_sequence();
+    // check if button 1 is pressed
+    if (!funDigitalRead(PIN_BTN_1))
+    {
+    boot_sequence(30);
+
+        led_fill_minigame();
+        Delay_Ms(400);
+    }
+
+
+    boot_sequence(75);
     
-    button_challenge();
+
+    
+    if (button_challenge()){
+        challenge_success(PIN_LITTLE_LED);
+    }
 
     Delay_Ms(400);
 

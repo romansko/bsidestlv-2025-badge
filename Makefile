@@ -1,4 +1,4 @@
-SRCS:=src/main.c src/uart.c src/ota.c src/prot.c ext/tiny-aes-c/aes.c src/spiflash.c src/armory.c src/secret.c src/libgcc_stubs.c src/led.c src/button.c
+SRCS:=src/main.c src/uart.c src/ota.c src/prot.c ext/tiny-aes-c/aes.c src/spiflash.c src/armory.c src/secret.c src/libgcc_stubs.c src/led.c src/button.c src/minigame.c
 OBJS:=$(SRCS:.c=.o)
 
 # Check if riscv64-unknown-elf-gcc exists
