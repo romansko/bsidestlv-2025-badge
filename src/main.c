@@ -390,10 +390,15 @@ int main()
     // check if button 1 is pressed
     if (!funDigitalRead(PIN_BTN_1))
     {
-    boot_sequence(30);
-
-        led_fill_minigame();
+        printf("Mini game mode\r\n");
+        boot_sequence(30);
+        for (int i = 10; i >= 1; i--){
+            printf("Filling LEDs with %d ms delay\r\n", i*10);
+            led_fill_minigame(i*10);
+        }
+        printf("Mini game mode completed\r\n");
         Delay_Ms(400);
+        all_challenges_success();
     }
 
 

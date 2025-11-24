@@ -7,9 +7,9 @@
 // Minigame: Hold button and release when all 5 LEDs are lit
 // Loops until success
 // Returns: 1 on success (always returns 1 since it loops until success)
-int led_fill_minigame(void)
+int led_fill_minigame(int fill_rate_ms)
 {
-    const int LED_DELAY_MS = 100; // Delay between each LED lighting up
+    const int LED_DELAY_MS = fill_rate_ms; // Delay between each LED lighting up
     const int DEBOUNCE_MS = 50;
     const int CHECK_INTERVAL_MS = 10;
     
@@ -99,7 +99,7 @@ int led_fill_minigame(void)
         if (!button_released)
         {
             // Give a small window to check if button is released (grace period)
-            Delay_Ms(100);
+            Delay_Ms(LED_DELAY_MS);
             
             int btn_state = !funDigitalRead(PIN_BTN_0);
             
