@@ -1,17 +1,17 @@
-# Sword of Secrets
-Unlock the hidden secrets of the sword. What kind of secrets lie in waiting? Designed for security researchers and hardware enthusiasts, the Sword of Secrets is your ultimate mystery in digital exploration.
+# BSidesTLV2025 Hardware CTF
+Unlock the hidden secrets of the badge. What kind of secrets lie in waiting? Designed for security researchers and hardware enthusiasts, the BSidesTLV2025 badge is your ultimate mystery in digital exploration.
 
 <p align = "center">
-    <img src="https://raw.githubusercontent.com/gili-yankovitch/SwordOfSecrets/main/images/front.png" height="500"> <img src="https://raw.githubusercontent.com/gili-yankovitch/SwordOfSecrets/main/images/back.png" height="500">
+    <img src="https://raw.githubusercontent.com/bsidestlv/bsidestlv-2025-badge/refs/heads/main/images/front.png" height="500"> <img src="https://raw.githubusercontent.com/bsidestlv/bsidestlv-2025-badge/refs/heads/main/images/back.png" height="500">
 </p>
 
 ### About The Project
-Sword of Secrets is a hardware hacking challenge. It is suitable for both novice and experienced tinkerers and hackers. It utilizes a low number of components to make the challenge easier to grasp, but hold in itself enough intricacies that will require the challenger a keen eye and sharp mind to solve all challenges.
+The BSidesTLV2025 badge is a hardware hacking challenge. It is suitable for both novice and experienced tinkerers and hackers. It utilizes a low number of components to make the challenge easier to grasp, but holds in itself enough intricacies that will require the challenger a keen eye and sharp mind to solve all challenges.
 
-To solve the challenge you will need to discover a series of flags, hidden inside the sword. Each one will help you unlock the next step in the challenge, to finally reveal the ultimate secret the sword holds.
+To solve the challenge you will need to discover a series of flags, hidden inside the badge. Each one will help you unlock the next step in the challenge, to finally reveal the ultimate secret the badge holds.
 
 ## How to Solve
-You, as the challenger, will face  a couple of tricks on the hardware level. It is strongly recomended to identify which chips are used, find their datasheet and understand how they are connected. Then, dive into the software to understand how it is built and figure out what needs to be done to make the sword uncover its truth to you. All the software (except the encryption keys and the flags) is available here on this repository. It is recommended to try and reverse engineer the PCB before heading towards the `hw` folder.
+You, as the challenger, will face a couple of tricks on the hardware level. It is strongly recommended to identify which chips are used, find their datasheet and understand how they are connected. Then, dive into the software to understand how it is built and figure out what needs to be done to make the badge uncover its truth to you. All the software (except the encryption keys and the flags) is available here on this repository. It is recommended to try and reverse engineer the PCB before heading towards the `hw` folder.
 
 ### Source structure
 * `aes.cpp` [AES implementation](https://github.com/kokke/tiny-AES-c)
@@ -20,7 +20,7 @@ You, as the challenger, will face  a couple of tricks on the hardware level. It 
 ... The rest is up to you. :-)
 
 ### You Will Need
-The following list is a recommended list of equipment that is suggested to solve the challenge:
+Ultimately, no additional tools are required to solve the challenges. However, for hardcore external hacking, the following list is a recommended list of equipment that is suggested to solve the challenge:
 * Multimeter
 * Soldering Iron
 * Jumper wires
@@ -58,7 +58,6 @@ Distributed under the MIT License.
 
 Gili Yankovitch - [@GiliYankovitch](https://x.com/GiliYankovitch) - giliy@nyxsecurity.net
 
-Project Link: [https://gili-yankovitch.github.io/SwordOfSecrets](https://gili-yankovitch.github.io/SwordOfSecrets)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
