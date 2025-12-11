@@ -280,11 +280,11 @@ static void parseCmd(char * data, size_t len)
     }
     if (!strcmp(CMD_ASSERT, data))
     {
-        turn_off_led(PIN_HAND_LED);
+        funDigitalWrite(PIN_FLASH_CS, FUN_LOW)
     }
     else if (!strcmp(CMD_RELEASE, data))
     {
-        turn_on_led(PIN_HAND_LED);
+        funDigitalWrite(PIN_FLASH_CS, FUN_HIGH)
     }
     else if (!strcmp(CMD_BEGIN, data))
     {
